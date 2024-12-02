@@ -7,6 +7,8 @@ exports.articlesRouter = void 0;
 const express_1 = __importDefault(require("express"));
 const getAll_1 = require("../controller/articles/getAll");
 const ajouter_1 = require("../controller/articles/ajouter");
+const getCartArticles_1 = require("../controller/articles/getCartArticles");
 exports.articlesRouter = express_1.default.Router();
 exports.articlesRouter.get("/", getAll_1.getAllArticles);
 exports.articlesRouter.post("/ajouter", ajouter_1.addArticleToCart);
+exports.articlesRouter.get("/panier/:userId", getCartArticles_1.getCartArticles);

@@ -37,6 +37,10 @@ let Commande = class Commande {
 };
 exports.Commande = Commande;
 __decorate([
+    (0, typeorm_1.PrimaryGeneratedColumn)("uuid"),
+    __metadata("design:type", Object)
+], Commande.prototype, "_id", void 0);
+__decorate([
     (0, typeorm_1.Column)(),
     __metadata("design:type", String)
 ], Commande.prototype, "_userId", void 0);

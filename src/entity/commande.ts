@@ -1,7 +1,8 @@
-import {Column, Entity} from "typeorm";
+import {Column, Entity, PrimaryGeneratedColumn} from "typeorm";
 
 @Entity()
 export class Commande {
+    @PrimaryGeneratedColumn("uuid")
     private _id: string | undefined;
     @Column()
     private _userId: string;

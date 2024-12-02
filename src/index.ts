@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use("/authentication", authenticationRouter);
 app.use("/articles", articlesRouter);
-app.use("/articles", commandeRouter);
+app.use("/commandes", commandeRouter);
 
 AppDataSource.initialize()
 .then(() => {

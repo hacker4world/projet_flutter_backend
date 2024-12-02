@@ -17,7 +17,7 @@ app.use(body_parser_1.default.json());
 app.use(body_parser_1.default.urlencoded({ extended: false }));
 app.use("/authentication", authentication_router_1.authenticationRouter);
 app.use("/articles", articles_router_1.articlesRouter);
-app.use("/articles", commande_router_1.commandeRouter);
+app.use("/commandes", commande_router_1.commandeRouter);
 data_source_1.AppDataSource.initialize()
     .then(() => {
     app.listen(4000, function () {
